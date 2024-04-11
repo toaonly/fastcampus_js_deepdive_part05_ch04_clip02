@@ -9,6 +9,8 @@ const api = {
         if (res.status !== 201) {
           throw new Error('로그인 실패')
         }
+
+        return res
       })
       .then(async res => await res.json())
   },

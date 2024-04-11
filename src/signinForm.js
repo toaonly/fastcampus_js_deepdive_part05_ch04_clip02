@@ -25,10 +25,12 @@ export default function renderSigninForm({ className }) {
       return { id, password }
     },
   }
-  const onSubmit = async e => {
+  const onSubmit = e => {
     e.preventDefault()
 
-    await api.signin(form.toJSON())
+    if (!form.id || !form.password) return
+
+    api.signin(form.toJSON())
   }
 
   return createElement(
