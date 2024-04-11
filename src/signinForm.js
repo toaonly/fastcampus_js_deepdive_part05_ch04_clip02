@@ -25,7 +25,7 @@ export default function renderSigninForm({ className }) {
       return { id, password }
     },
   }
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault()
 
     if (!form.id || !form.password) return
