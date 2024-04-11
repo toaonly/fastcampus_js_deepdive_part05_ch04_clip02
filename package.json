@@ -1,0 +1,26 @@
+{
+  "name": "fastcampus_js_deepdive_part05_ch04_clip02",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --raw \"npx vite\" \"node --watch server.js\"",
+    "test": "vitest test"
+  },
+  "devDependencies": {
+    "@vitest/browser": "^1.2.1",
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "happy-dom": "^13.3.1",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.8",
+    "vitest": "^1.2.1",
+    "webdriverio": "^8.29.1"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "lodash-es": "^4.17.21",
+    "uuid": "^9.0.1"
+  }
+}

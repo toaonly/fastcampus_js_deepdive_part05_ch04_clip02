@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 p-0;
+  @apply text-base;
+  @apply bg-slate-900;
+  @apply text-white;
+}
+
+input,
+textarea {
+  @apply p-2;
+  @apply bg-transparent;
+  @apply border-b border-slate-500;
+  @apply w-full;
+  @apply focus:border-pink-600;
+  @apply outline-none;
+}
+
+#app {
+  @apply flex justify-center;
+}
+
+.signin-container {
+  @apply mt-16;
+  @apply flex flex-col gap-4;
+  @apply border border-slate-500;
+  @apply rounded-md;
+  @apply px-12 py-20;
+  @apply w-[360px];
+  @apply box-content;
+
+  &__intro-wrapper {
+    @apply text-2xl leading-[1.5];
+  }
+
+  &__form-wrapper {
+    @apply pt-8;
+
+    &__form {
+      @apply flex flex-col gap-4;
+
+      &__button-wrapper {
+        @apply pt-8;
+
+        button {
+          @apply py-3;
+          @apply bg-pink-600 hover:bg-pink-700 active:bg-pink-500;
+          @apply rounded-sm;
+          @apply w-full;
+          @apply font-medium;
+        }
+      }
+    }
+  }
+}
