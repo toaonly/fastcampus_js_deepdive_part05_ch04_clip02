@@ -84,9 +84,8 @@ describe('app 테스트', () => {
       } catch (error) {
         expect(spyApiSignin).toBeCalled()
         expect(error.message).toBe('로그인 실패')
+        expect(location.href).toBe('/')
       }
-
-      expect(location.href).toBe('/')
     })
 
     it('데이터베이스에 있는 id, password 를 채웠을 경우, 다음 화면으로 이동한다', async () => {
