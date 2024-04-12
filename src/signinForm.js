@@ -30,7 +30,9 @@ export default function renderSigninForm({ className }) {
 
     if (!form.id || !form.password) return
 
-    return api.signin(form.toJSON())
+    await api.signin(form.toJSON())
+
+    location.href = '/main.html'
   }
 
   return createElement(
