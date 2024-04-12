@@ -30,7 +30,7 @@ export default function renderSigninForm({ className }) {
 
     if (!form.id || !form.password) return
 
-    api.signin(form.toJSON())
+    return api.signin(form.toJSON())
   }
 
   return createElement(
